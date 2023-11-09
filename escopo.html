@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom para iniciantes</title>
+  </head>
+  <body>
+    <h1 class="Classe-do=h1">teste</h1>
+    <script>
+      const href = window.location.href;
+      console.log(href);
+      if (href === "http://127.0.0.1:5500/dom-para-iniciantes/index.html") {
+        alert("está funcionando!!");
+      }
+
+      const selecionaH1 = document.querySelector('h1');
+      selecionaH1.addEventListener('click', function(){
+        console.log("clicou em", selecionaH1)
+      })
+
+    </script>
+  </body>
+</html>
